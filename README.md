@@ -88,6 +88,82 @@ The project includes aggregation queries to:
 * Query Optimisation
 * Data Modelling
 
+## How to Run Locally
+
+### Prerequisites
+
+Install the following software:
+
+- MongoDB Community Server
+- MongoDB Shell (mongosh)
+- Git
+
+### Clone the Repository
+
+```bash
+git clone https://github.com/PatrickOneill27/gym-membership-mongodb.git
+```
+
+```bash
+cd gym-membership-mongodb
+```
+
+### Start MongoDB Shell
+
+```bash
+mongosh
+```
+
+### Select the Database
+
+```javascript
+use gym_20119129
+```
+
+### Run the Script
+
+```javascript
+load("gym_membership_database.js")
+```
+
+### Verify the Database
+
+Display all collections:
+
+```javascript
+show collections
+```
+
+View sample members:
+
+```javascript
+db.members.find().limit(5)
+```
+
+View memberships:
+
+```javascript
+db.memberships.find().limit(5)
+```
+
+View subscription tiers:
+
+```javascript
+db.subscription_tiers.find()
+```
+
+### Expected Result
+
+Running the script will:
+
+- Create the gym database
+- Create all required collections
+- Apply validation rules
+- Insert sample data
+- Create indexes
+- Demonstrate CRUD operations
+- Execute aggregation pipelines for reporting
+
 ## Future Improvements
 
 Potential future enhancements include:
