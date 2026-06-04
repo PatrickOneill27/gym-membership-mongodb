@@ -1,7 +1,5 @@
 # Gym Membership Database
 
-## Overview
-
 A MongoDB-based Gym Membership Management System developed to demonstrate database design, schema validation, CRUD operations, indexing, and aggregation pipelines.
 
 The project stores and manages gym members, memberships, and subscription tiers while enforcing data integrity through MongoDB validation rules and providing analytical reporting through aggregation queries.
